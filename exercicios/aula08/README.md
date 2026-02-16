@@ -1,47 +1,90 @@
-# Exercício Aula 08: Jenkins: CI/CD Alternativo
+# Exercício Aula 08: Continuous Delivery e Deployment
 
 ## 🎯 Objetivo
 
-Colocar em prática os conceitos de **Jenkins: CI/CD Alternativo**.
+Implementar deployment automático com aprovação manual
 
-## 📝 Descrição
+---
 
-TODO: Descrever exercício prático
+## 📋 Requisitos
+
+- Repositório GitHub
+- GitHub Actions habilitado
+- Conhecimento básico de YAML
+
+---
+
+## 📝 Descrição do Exercício
+
+### Contexto
+
+Aplique os conceitos de **Continuous Delivery e Deployment** em um cenário prático do dia a dia de um profissional DevOps.
+
+### Tarefas
+
+1. [ ] Criar workflow `.github/workflows/ci.yml`
+2. [ ] Configurar trigger (push + pull_request)
+3. [ ] Adicionar jobs (build, test, lint)
+4. [ ] Testar com commit real
+5. [ ] Documentar pipeline no README
+
+---
+
+## 🚀 Como Entregar
+
+1. **Fork** este repositório
+2. **Clone** seu fork
+3. Crie pasta `solucoes/seu-nome/aula08/`
+4. Adicione seus arquivos:
+   - `README.md` (documentação)
+   - Código/configurações
+   - Screenshots (se aplicável)
+5. **Commit** e **Push**
+6. Abra **Pull Request**: `[Aula 08] Seu Nome`
+
+---
 
 ## ✅ Critérios de Avaliação
 
 | Critério | Pontos | Descrição |
 |----------|--------|-----------|
-| **Funcionalidade** | 40 | TODO |
-| **Boas Práticas** | 30 | TODO |
-| **Documentação** | 20 | README.md claro |
-| **Criatividade** | 10 | Soluções inovadoras |
+| **Funcionalidade** | 40 | Código/config funciona conforme especificado |
+| **Boas Práticas** | 30 | Organização, nomenclatura, padrões |
+| **Documentação** | 20 | README claro, screenshots, explicações |
+| **Qualidade** | 10 | Código limpo, comentários, criatividade |
 | **TOTAL** | **100** | |
 
-## 🚀 Como Fazer
+---
 
-1. Faça um fork do repositório
-2. Clone para sua máquina
-3. Crie/edite os arquivos na pasta `exercicios/aula08/`
-4. Teste localmente
-5. Commit e push
-6. Abra um Pull Request: `[Aula 08] Seu Nome`
+## 🤖 Validação Automática
 
-## 📦 Entrega
+O bot irá verificar:
 
-- **Pasta:** `exercicios/aula08/`
-- **Arquivos esperados:** TODO
-- **Prazo:** Próxima aula
+- ✅ Arquivo `.github/workflows/*.yml` presente
+- ✅ Sintaxe YAML válida
+- ✅ Jobs configurados corretamente
+- ✅ Workflow executou com sucesso
+
+**Feedback automático em ~30 segundos após abrir PR!** 🚀
+
+---
 
 ## 💡 Dicas
 
-- TODO: Adicionar dicas específicas
+- Valide YAML online: https://www.yamllint.com/
+- GitHub Actions marketplace tem actions prontas
+- Use `actions/checkout@v3` para clonar repo no workflow
 
-## 🆘 Precisa de Ajuda?
+---
 
-- [Abrir Issue](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
-- Consulte o [Guia Passo a Passo](../../GUIA-PASSO-A-PASSO.md)
+## 📚 Recursos
+
+- [Slides da Aula 08](../../aulas/aula08/slides.md)
+- [Documentação oficial](#)
+- [Exemplos práticos](#)
 
 ---
 
 **Boa sorte! 🚀**
+
+**Dúvidas?** Abra uma [issue](../../issues) com label `dúvida`

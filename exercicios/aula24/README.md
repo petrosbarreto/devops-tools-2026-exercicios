@@ -1,47 +1,91 @@
-# Exercício Aula 24: Kubernetes: Scaling
+# Exercício Aula 24: Health Checks e Auto-scaling
 
 ## 🎯 Objetivo
 
-Colocar em prática os conceitos de **Kubernetes: Scaling**.
+App com health checks + auto-scaling completo
 
-## 📝 Descrição
+---
 
-TODO: Descrever exercício prático
+## 📋 Requisitos
+
+- kubectl instalado
+- minikube ou cluster K8s
+- Helm 3 instalado
+- 8GB RAM disponível
+
+---
+
+## 📝 Descrição do Exercício
+
+### Contexto
+
+Aplique os conceitos de **Health Checks e Auto-scaling** em um cenário prático do dia a dia de um profissional DevOps.
+
+### Tarefas
+
+1. [ ] Criar manifests YAML (deployment, service)
+2. [ ] Deploy no cluster (`kubectl apply`)
+3. [ ] Verificar pods (`kubectl get pods`)
+4. [ ] Testar acesso ao serviço
+5. [ ] Documentar arquitetura
+
+---
+
+## 🚀 Como Entregar
+
+1. **Fork** este repositório
+2. **Clone** seu fork
+3. Crie pasta `solucoes/seu-nome/aula24/`
+4. Adicione seus arquivos:
+   - `README.md` (documentação)
+   - Código/configurações
+   - Screenshots (se aplicável)
+5. **Commit** e **Push**
+6. Abra **Pull Request**: `[Aula 24] Seu Nome`
+
+---
 
 ## ✅ Critérios de Avaliação
 
 | Critério | Pontos | Descrição |
 |----------|--------|-----------|
-| **Funcionalidade** | 40 | TODO |
-| **Boas Práticas** | 30 | TODO |
-| **Documentação** | 20 | README.md claro |
-| **Criatividade** | 10 | Soluções inovadoras |
+| **Funcionalidade** | 40 | Código/config funciona conforme especificado |
+| **Boas Práticas** | 30 | Organização, nomenclatura, padrões |
+| **Documentação** | 20 | README claro, screenshots, explicações |
+| **Qualidade** | 10 | Código limpo, comentários, criatividade |
 | **TOTAL** | **100** | |
 
-## 🚀 Como Fazer
+---
 
-1. Faça um fork do repositório
-2. Clone para sua máquina
-3. Crie/edite os arquivos na pasta `exercicios/aula24/`
-4. Teste localmente
-5. Commit e push
-6. Abra um Pull Request: `[Aula 24] Seu Nome`
+## 🤖 Validação Automática
 
-## 📦 Entrega
+O bot irá verificar:
 
-- **Pasta:** `exercicios/aula24/`
-- **Arquivos esperados:** TODO
-- **Prazo:** Próxima aula
+- ✅ Manifests YAML válidos
+- ✅ Sintaxe Kubernetes correta
+- ✅ Deployment com réplicas configuradas
+- ✅ Service expondo aplicação
+
+**Feedback automático em ~30 segundos após abrir PR!** 🚀
+
+---
 
 ## 💡 Dicas
 
-- TODO: Adicionar dicas específicas
+- Use `kubectl explain` para ver docs de recursos
+- `kubectl get events` ajuda no debug
+- Labels ajudam a organizar recursos
 
-## 🆘 Precisa de Ajuda?
+---
 
-- [Abrir Issue](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
-- Consulte o [Guia Passo a Passo](../../GUIA-PASSO-A-PASSO.md)
+## 📚 Recursos
+
+- [Slides da Aula 24](../../aulas/aula24/slides.md)
+- [Documentação oficial](#)
+- [Exemplos práticos](#)
 
 ---
 
 **Boa sorte! 🚀**
+
+**Dúvidas?** Abra uma [issue](../../issues) com label `dúvida`

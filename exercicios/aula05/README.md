@@ -1,47 +1,90 @@
-# Exercício Aula 05: CI - Continuous Integration
+# Exercício Aula 05: GitHub e Colaboração
 
 ## 🎯 Objetivo
 
-Colocar em prática os conceitos de **CI - Continuous Integration**.
+Contribuir com projeto open source (small fix)
 
-## 📝 Descrição
+---
 
-TODO: Descrever exercício prático
+## 📋 Requisitos
+
+- Git instalado (v2.30+)
+- Conta no GitHub
+- Editor de texto (VS Code recomendado)
+
+---
+
+## 📝 Descrição do Exercício
+
+### Contexto
+
+Aplique os conceitos de **GitHub e Colaboração** em um cenário prático do dia a dia de um profissional DevOps.
+
+### Tarefas
+
+1. [ ] Criar repositório Git local
+2. [ ] Fazer 5+ commits com mensagens semânticas
+3. [ ] Criar e fazer merge de branch feature
+4. [ ] Resolver conflito de merge (simulado)
+5. [ ] Documentar processo no README.md
+
+---
+
+## 🚀 Como Entregar
+
+1. **Fork** este repositório
+2. **Clone** seu fork
+3. Crie pasta `solucoes/seu-nome/aula05/`
+4. Adicione seus arquivos:
+   - `README.md` (documentação)
+   - Código/configurações
+   - Screenshots (se aplicável)
+5. **Commit** e **Push**
+6. Abra **Pull Request**: `[Aula 05] Seu Nome`
+
+---
 
 ## ✅ Critérios de Avaliação
 
 | Critério | Pontos | Descrição |
 |----------|--------|-----------|
-| **Funcionalidade** | 40 | TODO |
-| **Boas Práticas** | 30 | TODO |
-| **Documentação** | 20 | README.md claro |
-| **Criatividade** | 10 | Soluções inovadoras |
+| **Funcionalidade** | 40 | Código/config funciona conforme especificado |
+| **Boas Práticas** | 30 | Organização, nomenclatura, padrões |
+| **Documentação** | 20 | README claro, screenshots, explicações |
+| **Qualidade** | 10 | Código limpo, comentários, criatividade |
 | **TOTAL** | **100** | |
 
-## 🚀 Como Fazer
+---
 
-1. Faça um fork do repositório
-2. Clone para sua máquina
-3. Crie/edite os arquivos na pasta `exercicios/aula05/`
-4. Teste localmente
-5. Commit e push
-6. Abra um Pull Request: `[Aula 05] Seu Nome`
+## 🤖 Validação Automática
 
-## 📦 Entrega
+O bot irá verificar:
 
-- **Pasta:** `exercicios/aula05/`
-- **Arquivos esperados:** TODO
-- **Prazo:** Próxima aula
+- ✅ Repositório Git válido (`.git/` presente)
+- ✅ Mínimo de 5 commits
+- ✅ Pelo menos 1 branch além de main
+- ✅ README.md presente e documentado
+
+**Feedback automático em ~30 segundos após abrir PR!** 🚀
+
+---
 
 ## 💡 Dicas
 
-- TODO: Adicionar dicas específicas
+- Use `git log --oneline --graph` para visualizar histórico
+- Commits semânticos: `feat:`, `fix:`, `docs:`, `refactor:`
+- Crie branch com nome descritivo: `feature/nova-funcionalidade`
 
-## 🆘 Precisa de Ajuda?
+---
 
-- [Abrir Issue](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
-- Consulte o [Guia Passo a Passo](../../GUIA-PASSO-A-PASSO.md)
+## 📚 Recursos
+
+- [Slides da Aula 05](../../aulas/aula05/slides.md)
+- [Documentação oficial](#)
+- [Exemplos práticos](#)
 
 ---
 
 **Boa sorte! 🚀**
+
+**Dúvidas?** Abra uma [issue](../../issues) com label `dúvida`

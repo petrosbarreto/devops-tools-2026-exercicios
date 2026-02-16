@@ -1,47 +1,90 @@
-# Exercício Aula 13: Docker: Networking
+# Exercício Aula 13: Docker Compose
 
 ## 🎯 Objetivo
 
-Colocar em prática os conceitos de **Docker: Networking**.
+Stack completa: frontend + backend + db + cache
 
-## 📝 Descrição
+---
 
-TODO: Descrever exercício prático
+## 📋 Requisitos
+
+- Docker instalado (v20.10+)
+- Docker Compose (v2.0+)
+- 4GB RAM disponível
+
+---
+
+## 📝 Descrição do Exercício
+
+### Contexto
+
+Aplique os conceitos de **Docker Compose** em um cenário prático do dia a dia de um profissional DevOps.
+
+### Tarefas
+
+1. [ ] Criar `Dockerfile` otimizado
+2. [ ] Construir imagem (`docker build`)
+3. [ ] Rodar container (`docker run`)
+4. [ ] Publicar no Docker Hub
+5. [ ] Documentar comandos usados
+
+---
+
+## 🚀 Como Entregar
+
+1. **Fork** este repositório
+2. **Clone** seu fork
+3. Crie pasta `solucoes/seu-nome/aula13/`
+4. Adicione seus arquivos:
+   - `README.md` (documentação)
+   - Código/configurações
+   - Screenshots (se aplicável)
+5. **Commit** e **Push**
+6. Abra **Pull Request**: `[Aula 13] Seu Nome`
+
+---
 
 ## ✅ Critérios de Avaliação
 
 | Critério | Pontos | Descrição |
 |----------|--------|-----------|
-| **Funcionalidade** | 40 | TODO |
-| **Boas Práticas** | 30 | TODO |
-| **Documentação** | 20 | README.md claro |
-| **Criatividade** | 10 | Soluções inovadoras |
+| **Funcionalidade** | 40 | Código/config funciona conforme especificado |
+| **Boas Práticas** | 30 | Organização, nomenclatura, padrões |
+| **Documentação** | 20 | README claro, screenshots, explicações |
+| **Qualidade** | 10 | Código limpo, comentários, criatividade |
 | **TOTAL** | **100** | |
 
-## 🚀 Como Fazer
+---
 
-1. Faça um fork do repositório
-2. Clone para sua máquina
-3. Crie/edite os arquivos na pasta `exercicios/aula13/`
-4. Teste localmente
-5. Commit e push
-6. Abra um Pull Request: `[Aula 13] Seu Nome`
+## 🤖 Validação Automática
 
-## 📦 Entrega
+O bot irá verificar:
 
-- **Pasta:** `exercicios/aula13/`
-- **Arquivos esperados:** TODO
-- **Prazo:** Próxima aula
+- ✅ `Dockerfile` presente e válido
+- ✅ Imagem constrói sem erros
+- ✅ Tamanho da imagem razoável (<500MB)
+- ✅ Documentação de comandos
+
+**Feedback automático em ~30 segundos após abrir PR!** 🚀
+
+---
 
 ## 💡 Dicas
 
-- TODO: Adicionar dicas específicas
+- Use imagens base pequenas (alpine, distroless)
+- `.dockerignore` reduz tamanho da imagem
+- Multi-stage builds otimizam drasticamente
 
-## 🆘 Precisa de Ajuda?
+---
 
-- [Abrir Issue](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
-- Consulte o [Guia Passo a Passo](../../GUIA-PASSO-A-PASSO.md)
+## 📚 Recursos
+
+- [Slides da Aula 13](../../aulas/aula13/slides.md)
+- [Documentação oficial](#)
+- [Exemplos práticos](#)
 
 ---
 
 **Boa sorte! 🚀**
+
+**Dúvidas?** Abra uma [issue](../../issues) com label `dúvida`
