@@ -1,159 +1,217 @@
-# 🤖 Exercícios Automatizados - DevOps Tools 2026.1
+# DevOps Tools 2026 - Exercícios Práticos 🧪
 
-**Professor:** Petros Barreto  
-**Disciplina:** DevOps Tools (SI 5º)  
-**Instituição:** UNINASSAU Recife
+**Sistema de exercícios automatizados** para a disciplina DevOps Tools (UNINASSAU 2026.1).
 
 ---
 
 ## 🎯 Como Funciona
 
-Este repositório usa **GitHub Actions** para validar automaticamente seus exercícios!
-
-### 📖 Guias Completos
-
-- **[🎓 Guia Passo a Passo](GUIA-PASSO-A-PASSO.md)** - Tutorial detalhado para iniciantes
-- **[⚡ Guia Rápido](GUIA-RAPIDO.md)** - Resumo de 5 minutos
-
-### Para Alunos
-
 1. **Fork** este repositório
-2. **Clone** seu fork para sua máquina
-3. Resolva os exercícios na pasta correspondente
-4. **Commit** suas alterações
-5. **Push** para seu fork
-6. Abra um **Pull Request** com título: `[Aula XX] Seu Nome`
-7. Aguarde o **bot validar** automaticamente
-8. Veja o **feedback** nos comentários do PR
-9. Corrija se necessário e faça novo push
-10. Quando aprovado, o professor fará o merge
+2. **Clone** seu fork
+3. **Crie branch** por exercício (`git checkout -b exercicio-01-seu-nome`)
+4. **Resolva** o exercício na pasta correspondente
+5. **Commit + Push** suas alterações
+6. **Abra Pull Request** para o repo original
+7. **GitHub Actions** valida automaticamente seu código
+8. **Pontuação** aparece no leaderboard (se score ≥ 70)
 
-**💡 Dúvidas?** [Abrir Issue](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
+**IMPORTANTE:** PRs **NÃO são mergeados**. Eles ficam abertos/fechados apenas para validação. Isso garante que as soluções permaneçam privadas.
 
 ---
 
-## 📂 Estrutura
+## 📊 Leaderboard
+
+Acompanhe o ranking em tempo real:  
+**🏆 [Ver Leaderboard](https://petrosbarreto.github.io/devops-tools-2026-exercicios/leaderboard.html)**
+
+Atualização automática a cada PR validado.
+
+---
+
+## 📁 Estrutura dos Exercícios
 
 ```
-devops-tools-2026-exercicios/
-├── .github/
-│   └── workflows/          # GitHub Actions
-│       ├── aula01.yml
-│       ├── aula02.yml
-│       └── ...
-├── exercicios/
-│   ├── aula01/
-│   │   └── README.md       # Instruções do exercício
-│   ├── aula02/
-│   └── ...
-├── leaderboard.html        # Ranking da turma
-├── GUIA-PASSO-A-PASSO.md   # Tutorial completo
-└── README.md
+exercicios/
+├── aula01/
+│   ├── README.md          # Enunciado
+│   ├── .github/
+│   │   └── workflows/
+│   │       └── validate.yml  # Testes automáticos
+│   └── solucao/           # Sua solução aqui
+├── aula02/
+├── aula03/
+...
 ```
 
 ---
 
-## 🏆 Leaderboard
+## 🚀 Guia Rápido
 
-**Ver Ranking:** [https://petrosbarreto.github.io/devops-tools-2026-exercicios/leaderboard.html](https://petrosbarreto.github.io/devops-tools-2026-exercicios/leaderboard.html)
+### 1️⃣ Setup Inicial (uma vez)
 
-Atualiza automaticamente a cada semana (segunda-feira 00:00 UTC).
+```bash
+# Fork no GitHub (botão "Fork")
+
+# Clone SEU fork
+git clone https://github.com/SEU-USUARIO/devops-tools-2026-exercicios.git
+cd devops-tools-2026-exercicios
+
+# Configure upstream (repo original)
+git remote add upstream https://github.com/petrosbarreto/devops-tools-2026-exercicios.git
+```
+
+### 2️⃣ Para Cada Exercício
+
+```bash
+# Atualize seu fork
+git checkout main
+git pull upstream main
+
+# Crie branch
+git checkout -b exercicio-01-seunome
+
+# Resolva o exercício (edite arquivos em exercicios/aula01/)
+code exercicios/aula01/solucao/
+
+# Commit
+git add .
+git commit -m "feat(aula01): resolve exercício introdução DevOps"
+
+# Push para SEU fork
+git push origin exercicio-01-seunome
+
+# Abra PR no GitHub
+# (GitHub vai sugerir automaticamente após o push)
+```
+
+### 3️⃣ Acompanhar Validação
+
+Após abrir o PR:
+1. Vá na aba **"Checks"** do seu PR
+2. Veja os testes rodando
+3. **Verde ✅:** Passou! Score aparece no leaderboard
+4. **Vermelho ❌:** Falhou. Veja os logs, corrija e faça novo push
 
 ---
 
-## 📊 Sistema de Pontuação
+## 📝 Lista de Exercícios
+
+| Aula | Tema | Dificuldade | Status |
+|------|------|-------------|--------|
+| 01 | Identificar Silos DevOps | ⭐ Fácil | 🚧 Em breve |
+| 02 | Sprint Planning DevOps | ⭐⭐ Médio | 🚧 Em breve |
+| 03 | Git Básico (branches, merge) | ⭐ Fácil | 🚧 Em breve |
+| 04 | GitHub Actions CI Simples | ⭐⭐ Médio | 🚧 Em breve |
+| 05 | Pipeline CI/CD Completo | ⭐⭐⭐ Difícil | 🚧 Em breve |
+| 06 | Dockerfile Node.js App | ⭐⭐ Médio | 🚧 Em breve |
+| 07 | Multi-stage Dockerfile | ⭐⭐⭐ Difícil | 🚧 Em breve |
+| 08 | docker-compose (web+db) | ⭐⭐ Médio | 🚧 Em breve |
+| 09 | Build + Push Docker Hub | ⭐⭐ Médio | 🚧 Em breve |
+| 10 | Deploy Kubernetes (Minikube) | ⭐⭐⭐ Difícil | 🚧 Em breve |
+| 11 | ConfigMap + Secrets | ⭐⭐ Médio | 🚧 Em breve |
+| 12 | Ingress + TLS | ⭐⭐⭐ Difícil | 🚧 Em breve |
+| 13 | Helm Chart Customizado | ⭐⭐⭐ Difícil | 🚧 Em breve |
+| 14 | Agregação Logs (Loki) | ⭐⭐ Médio | 🚧 Em breve |
+| 15 | Query Elasticsearch | ⭐⭐ Médio | 🚧 Em breve |
+| 16 | Logstash Pipeline (grok) | ⭐⭐⭐ Difícil | 🚧 Em breve |
+| 17 | Dashboard Kibana | ⭐⭐ Médio | 🚧 Em breve |
+| 18 | **PROJETO FINAL** | ⭐⭐⭐⭐ Desafiador | 🚧 Em breve |
+
+**Total:** 18 exercícios + 1 projeto final
+
+---
+
+## 🏆 Sistema de Pontuação
 
 Cada exercício vale **0-100 pontos**:
 
-| Critério | Pontos |
-|----------|--------|
-| **Funcionalidade** | 40 |
-| **Boas Práticas** | 30 |
-| **Documentação** | 20 |
-| **Criatividade** | 10 |
-| **TOTAL** | **100** |
+- **100:** Perfeito (testes passaram, código limpo, documentado)
+- **90-99:** Ótimo (testes OK, pequenos ajustes)
+- **80-89:** Bom (funciona, mas pode melhorar)
+- **70-79:** Aceitável (mínimo para aparecer no leaderboard)
+- **0-69:** Não passou (testes falharam ou incompleto)
 
-**Nota mínima para aprovar:** 70/100
-
----
-
-## 🎯 Exercícios por Unidade
-
-### UNIDADE I - DevOps Fundamentos (8 exercícios)
-01. Introdução ao DevOps - Cultura e Conceitos
-02. DevOps + Ágil - Integração de Metodologias
-03. Git Branching Strategy - Implementar Git Flow
-04. GitHub Actions - Criar Workflow CI
-05. CI Pipeline - Build e Testes Automáticos
-06. CD Pipeline - Deploy Automático
-07. Blue-Green Deployment - Estratégia Zero Downtime
-08. Jenkins Pipeline - Alternativa ao GitHub Actions
-
-### UNIDADE II - Containers (10 exercícios)
-09. Comparação VMs vs Containers
-10. Docker Hello World - Primeiro Container
-11. Dockerfile - Criar Imagem Customizada
-12. Docker Compose - App Multi-container
-13. Docker Networks - Comunicação entre Containers
-14. Docker Volumes - Persistência de Dados
-15. Container Registry - Publicar Imagem
-16. Docker Security - Scan e Hardening
-17. Multi-stage Build - Otimização de Imagem
-18. Projeto Full Stack - Frontend + Backend + DB
-
-### UNIDADE III - Kubernetes (10 exercícios)
-19. Minikube Setup - Cluster Local
-20. Pods e Services - Deploy Básico
-21. ConfigMaps e Secrets - Configuração
-22. Ingress Controller - Roteamento HTTP
-23. Persistent Volumes - Storage no K8s
-24. HPA - Horizontal Pod Autoscaler
-25. Helm Chart - Package da Aplicação
-26. Multi-Environment - Dev/Staging/Prod
-27. Health Checks - Liveness e Readiness
-28. Projeto K8s Completo - App Production-Ready
-
-### UNIDADE IV - Observabilidade (8 exercícios)
-29. Three Pillars - Logs, Metrics, Traces
-30. Elasticsearch - Índices e Queries
-31. Logstash - Pipeline de Processamento
-32. Beats - Coleta de Logs e Métricas
-33. Kibana Dashboard - Visualização de Dados
-34. APM - Application Performance Monitoring
-35. Alertas - Configurar Watchers
-36. Projeto Final - Stack Completa (App + K8s + ELK)
+**Ranking:**
+- 🥇 **Ouro:** 1800-2000 pontos
+- 🥈 **Prata:** 1600-1799
+- 🥉 **Bronze:** 1400-1599
+- 🎖️ **Aprovado:** 1000-1399 (média 7.0)
 
 ---
 
-## 🤖 Bot de Validação
+## ❓ FAQs
 
-O bot valida automaticamente:
+### **1. Posso ver a solução de outros alunos?**
 
-✅ Arquivos necessários presentes  
-✅ Sintaxe correta (YAML, Dockerfile, etc)  
-✅ Boas práticas seguidas  
-✅ Documentação adequada  
-✅ Código funcional  
+**NÃO.** PRs não são mergeados, então soluções ficam privadas nos forks de cada um.  
+Copiar código é contra as regras e detectável (análise de plágio automática).
 
-Feedback em ~30 segundos após abrir o PR!
+### **2. O que fazer se o teste falhar?**
+
+1. Veja os **logs de erro** na aba "Checks" do PR
+2. **Corrija** o código localmente
+3. **Commit + push** novamente (mesmo branch)
+4. O PR será **re-validado automaticamente**
+
+### **3. Posso refazer um exercício?**
+
+**SIM!** Faça novo push no mesmo PR. O score será atualizado.
+
+### **4. Preciso fazer TODOS os exercícios?**
+
+Para média 7.0, precisa de ~1260 pontos (63% de 2000).  
+Mas recomendamos fazer todos — o aprendizado é cumulativo!
+
+### **5. Posso trabalhar em grupo?**
+
+**NÃO** nos exercícios individuais.  
+**SIM** no projeto final (duplas, com aprovação do professor).
+
+### **6. Quando os exercícios serão liberados?**
+
+Após cada aula. Ex: Aula 01 → Exercício 01 liberado no mesmo dia.
 
 ---
 
-## 🆘 Precisa de Ajuda?
+## 🛠️ Requisitos Técnicos
 
-- **Dúvida sobre exercício:** [Abrir Issue](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
-- **Bug no sistema:** [Reportar](https://github.com/petrosbarreto/devops-tools-2026-exercicios/issues/new/choose)
-- **Guia completo:** [GUIA-PASSO-A-PASSO.md](GUIA-PASSO-A-PASSO.md)
-
----
-
-## 📚 Recursos
-
-- **Slides:** [devops-tools-2026](https://github.com/petrosbarreto/devops-tools-2026)
-- **Docker Docs:** [docs.docker.com](https://docs.docker.com)
-- **Kubernetes Docs:** [kubernetes.io](https://kubernetes.io/docs)
-- **Elastic Docs:** [elastic.co/guide](https://www.elastic.co/guide/)
+- **Git** instalado
+- **Conta GitHub** (gratuita)
+- **Docker** (a partir da aula 06)
+- **Kubectl + Minikube** (a partir da aula 10)
 
 ---
 
-**Bom semestre e bom código! 🚀**
+## 📧 Suporte
+
+**Dúvidas sobre exercícios:**
+- Abra **Issue** neste repo com tag `question`
+- Ou pergunte no grupo da turma
+
+**Problemas técnicos (GitHub Actions):**
+- Tag `bug` na issue
+
+**Professor:**  
+📧 petrosbarreto01@gmail.com
+
+---
+
+## 🔗 Links Úteis
+
+- **[Slides das Aulas](https://github.com/petrosbarreto/devops-tools-2026)**
+- **[Leaderboard](https://petrosbarreto.github.io/devops-tools-2026-exercicios/leaderboard.html)**
+- **[Como Fazer PR](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)**
+- **[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)**
+
+---
+
+<div align="center">
+
+**🎓 Bons estudos e bom código! 🚀**
+
+![DevOps](https://img.shields.io/badge/DevOps-Practice-FF6B6B?style=for-the-badge)
+![GitHub Actions](https://img.shields.io/badge/Auto_Grading-Enabled-2088FF?style=for-the-badge)
+
+**UNINASSAU Recife | 2026.1**
+
+</div>
